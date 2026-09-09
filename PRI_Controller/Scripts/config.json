@@ -1,0 +1,65 @@
+{
+  "paths": {
+    "asset_dir": "Asset",
+    "control_dir": "Control",
+    "scripts_dir": "Scripts"
+  },
+  "files": {
+    "mcc_json": "riveting_machine_mcc.json",
+    "usd_file": "riveting_machine.usd",
+    "io_control": "IO_Control.py",
+    "vacuum_control": "Vacuum_Control.py",
+    "motor_control": "Motor_Control.py",
+    "test_control": "Test_Control.py",
+    "server_script": "Sever_Control.py"
+  },
+  "usd": {
+    "server_prim_path": "/Root",
+    "control_script_mapping": {
+      "IO_Control.py": "/World/Behavior_Scripts/Mesh/IO",
+      "Motor_Control.py": "/World/Behavior_Scripts/Mesh/Motor",
+      "Vacuum_Control.py": "/World/Behavior_Scripts/Mesh/Vacuum",
+      "Test_Control.py": "/World/Behavior_Scripts/Mesh/Test"
+    }
+  },
+  "json_parsing": {
+    "down_action_keywords": ["down"],
+    "up_action_keywords": ["up"]
+  },
+  "control_units": ["Motor", "IO"],
+  "control_unit_mapping": {
+    "IO": "io_control",
+    "Motor": "motor_control"
+
+  },
+  "json_fields": {
+    "prim_path": "PrimPath",
+    "drive_source": "DriveSource",
+    "control_unit": "ControlUnit",
+    "action": "Action",
+    "code": "Code",
+    "tx": "Tx",
+    "ty": "Ty",
+    "tz": "Tz",
+    "rx": "Rx",
+    "ry": "Ry",
+    "rz": "Rz",
+    "dist_mm": "DistMm",
+    "duration": "Duration",
+    "tact_time_sec": "TactTimeSec",
+    "elapsed_time_address": "ElapsedTimeAddress"
+  },
+  "usd_attributes": {
+    "axis_id": "aurora_axis_id",
+    "do_address": "do_address",
+    "undo_address": "undo_address",
+    "do_position": "do_position",
+    "undo_position": "undo_position",
+    "tact_time": "tact_time",
+    "elapsed_time_address": "elapsed_time_address",
+    "init_translate": "user:init:translate",
+    "init_rotate": "user:init:rotate",
+    "scripting_scripts": "omni:scripting:scripts"
+  }
+}
+
